@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aktuelles Wetter und 7-Tage-Vorhersage für Ski Arlberg. Schneehöhen, Lawinenwarnstufen und alle wichtigen Wetterinfos für deinen Skitag.">
+    <title>Wetter & Schnee | Ski Arlberg</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">⛷️</span>
+                <span class="logo-text">Ski Arlberg</span>
+            </a>
+            <nav class="nav" id="nav">
+                <button class="nav-toggle" id="navToggle" aria-label="Navigation öffnen">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Start</a></li>
+                    <li><a href="wetter.html" class="nav-link active">Wetter & Schnee</a></li>
+                    <li><a href="pisten.html" class="nav-link">Pisten & Lifte</a></li>
+                    <li><a href="empfehlungen.html" class="nav-link">Empfohlene Pisten</a></li>
+                    <li><a href="planer.html" class="nav-link">Planer</a></li>
+                    <li><a href="info.html" class="nav-link">Info</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <section class="page-header">
+            <div class="container">
+                <h1>Wetter & Schnee</h1>
+                <p>Aktuelle Bedingungen und Prognosen für Ski Arlberg</p>
+            </div>
+        </section>
+
+        <!-- Aktuelles Wetter -->
+        <section class="current-weather">
+            <div class="container">
+                <h2 class="section-title">Aktuelles Wetter</h2>
+                <div class="weather-grid">
+                    <!-- Tal -->
+                    <div class="weather-location-card">
+                        <div class="weather-location-header">
+                            <h3>📍 Lech (Tal)</h3>
+                            <span class="elevation">1.450 m</span>
+                        </div>
+                        <div class="weather-current" id="weatherTal">
+                            <div class="weather-temp-large">-2°</div>
+                            <div class="weather-condition">⛅ Leicht bewölkt</div>
+                            <div class="weather-snow-depth">❄️ Schnee: 45 cm</div>
+                        </div>
+                        <div class="weather-details-grid">
+                            <div class="detail-item">
+                                <span class="detail-label">Wind</span>
+                                <span class="detail-value">12 km/h</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Feuchtigkeit</span>
+                                <span class="detail-value">65%</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Sicht</span>
+                                <span class="detail-value">10 km</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">UV-Index</span>
+                                <span class="detail-value">2 (niedrig)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Berg -->
+                    <div class="weather-location-card">
+                        <div class="weather-location-header">
+                            <h3>🏔️ Valluga (Berg)</h3>
+                            <span class="elevation">2.811 m</span>
+                        </div>
+                        <div class="weather-current" id="weatherBerg">
+                            <div class="weather-temp-large">-8°</div>
+                            <div class="weather-condition">☀️ Sonnig</div>
+                            <div class="weather-snow-depth">❄️ Schnee: 125 cm</div>
+                        </div>
+                        <div class="weather-details-grid">
+                            <div class="detail-item">
+                                <span class="detail-label">Wind</span>
+                                <span class="detail-value">25 km/h</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Feuchtigkeit</span>
+                                <span class="detail-value">45%</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Sicht</span>
+                                <span class="detail-value">>20 km</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">UV-Index</span>
+                                <span class="detail-value">4 (mittel)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div
