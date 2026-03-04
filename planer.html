@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Plane deinen perfekten Skitag in Arlberg. Routenplaner, Tagesplanung und Tipps für das beste Skierlebnis.">
+    <title>Planer | Ski Arlberg</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">⛷️</span>
+                <span class="logo-text">Ski Arlberg</span>
+            </a>
+            <nav class="nav" id="nav">
+                <button class="nav-toggle" id="navToggle" aria-label="Navigation öffnen">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Start</a></li>
+                    <li><a href="wetter.html" class="nav-link">Wetter & Schnee</a></li>
+                    <li><a href="pisten.html" class="nav-link">Pisten & Lifte</a></li>
+                    <li><a href="empfehlungen.html" class="nav-link">Empfohlene Pisten</a></li>
+                    <li><a href="planer.html" class="nav-link active">Planer</a></li>
+                    <li><a href="info.html" class="nav-link">Info</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <section class="page-header">
+            <div class="container">
+                <h1>Planer</h1>
+                <p>Plane deinen perfekten Skitag</p>
+            </div>
+        </section>
+
+        <section class="quick-stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-number">87</span>
+                        <span class="stat-label">Lifte verbinden alles</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">66</span>
+                        <span class="stat-label">km Skirunden</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-preview">
+            <div class="container">
+                <h2 class="section-title">Routenplaner</h2>
+                <div class="map-container" style="height: 400px;">
+                    <div class="map-placeholder" style="height: 100%; display: flex; align-items: center; justify-content: center; flex-direction: column; background: linear-gradient(135deg, #E0E7EF 0%, #F5F7FA 100%);">
+                        <p style="font-size: 4rem; margin-bottom: 1rem;">🗺️</p>
+                        <h3 style="color: var(--primary);">Routenplaner</h3>
+                        <p class="map-hint">Wähle Start und Ziel für deine Route</p>
+                        <div style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
+                            <select class="form-select" style="padding: 0.75rem 1.5rem; border-radius: 8px; border: 1px solid var(--border); min-width: 200px;">
+                                <option>Start: Lech</option>
+                                <option>Start: St. Anton</option>
+                                <option>Start: Zürs</option>
+                                <option>Start: Stuben</option>
+                            </select>
+                            <select class="form-select" style="padding: 0.75rem 1.5rem; border-radius: 8px; border: 1px solid var(--border); min-width: 200px;">
+                                <option>Ziel: Valluga</option>
+                                <option>Ziel: Galzig</option>
+                                <option>Ziel: Schindler</option>
+                                <option>Ziel: Zürs</option>
+                            </select>
+                            <button class="btn btn-primary">Route berechnen</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="recommendations">
+            <div class="container">
+                <h2 class="section-title">Vorgeschlagene Routen</h2>
+                <div class="recommendations-grid">
+                    <div class="recommendation-card">
+                        <div class="rec-content">
+                            <h3>🏔️ Die Gipfeltour</h3>
+                            <p>Von Lech über Zürs nach St. Anton - die klassische Skirunde.</p>
+                            <div class="rec-meta">
+                                <span class="difficulty">⏱️ 2-3 Stunden</span>
+                                <span class="length">📏 12 km Fahrt</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recommendation-card">
+                        <div class="rec-content">
+                            <h3>⛷️ Familientour</h3>
+                            <p>Sanfte Pisten rund um Lech und Oberlech.</p>
+                            <div class="rec-meta">
+                                <span class="difficulty">⏱️ 1-2 Stunden</span>
+                                <span class="length">📏 8 km Fahrt</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recommendation-card">
+                        <div class="rec-content">
+                            <h3>⚡ Speedrun</h3>
+                            <p>Schnellste Verbindung St. Anton - Lech für Experten.</p>
+                            <div class="rec-meta">
+                                <span class="difficulty">⏱️ 45 Minuten</span>
+                                <span class="length">📏 15 km Fahrt</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

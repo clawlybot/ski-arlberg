@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alle Pisten und Lifte im Überblick. Interaktive Karte, Live-Status und detaillierte Informationen zu jeder Abfahrt im Skigebiet Arlberg.">
+    <title>Pisten & Lifte | Ski Arlberg</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">⛷️</span>
+                <span class="logo-text">Ski Arlberg</span>
+            </a>
+            <nav class="nav" id="nav">
+                <button class="nav-toggle" id="navToggle" aria-label="Navigation öffnen">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Start</a></li>
+                    <li><a href="wetter.html" class="nav-link">Wetter & Schnee</a></li>
+                    <li><a href="pisten.html" class="nav-link active">Pisten & Lifte</a></li>
+                    <li><a href="empfehlungen.html" class="nav-link">Empfohlene Pisten</a></li>
+                    <li><a href="planer.html" class="nav-link">Planer</a></li>
+                    <li><a href="info.html" class="nav-link">Info</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <section class="page-header">
+            <div class="container">
+                <h1>Pisten & Lifte</h1>
+                <p>305 km Pisten, 87 Bahnen – alle Informationen auf einen Blick</p>
+            </div>
+        </section>
+
+        <!-- Gesamtstatistik -->
+        <section class="quick-stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-number">181</span>
+                        <span class="stat-label">Abfahrten</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">72/87</span>
+                        <span class="stat-label">Lifte offen</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">15</span>
+                        <span class="stat-label">Skirouten</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">20</span>
+                        <span class="stat-label">km Langlauf</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interaktive Karte -->
+        <section class="map-preview" id="karte">
+            <div class="container">
+                <h2 class="section-title">Interaktive Pistenkarte</h2>
+                <div class="map-container" style="height: 500px;">
+                    <div class="map-placeholder" style="height: 100%; display: flex; align-items: center; justify-content: center; flex-direction: column; background: linear-gradient(135deg, #E0E7EF 0%, #F5F7FA 100%);">
+                        <p style="font-size: 4rem; margin-bottom: 1rem;">🗺️</p>
+                        <h3 style="color: var(--primary);">Interaktive Karte</h3>
+                        <p class="map-hint">Hier wird die vollständige Pistenkarte angezeigt</p>
+                        <p style="margin-top: 1rem; font-size: 0.875rem; color: var(--text-light);">Valluga - Galzig - St. Anton - Lech - Zürs</p>
+                    </div>
+                </div>
+                <div class="status-legend" style="margin-top: 1.5rem;">
+                    <span class="legend-item"><span class="status-dot" style="background:#0066CC"></span> Blau (leicht)</span>
+                    <span class="legend-item"><span class="status-dot" style="background:#EF4444"></span> Rot (mittel)</span>
+                    <span class="legend-item"><span class="status-dot" style="background:#1A1A2E"></span> Schwarz (schwer)</span>
+                    <span class="legend-item"><span class="status-dot" style="background:#F59E0B"></span> Skiroute</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pisten Status -->
+        <section class="piste-status">
+            <div class="container">
+                <h2 class="section-title">Aktueller Pistenstatus</h2>
+                <div class="status-grid">
+                    <div class="status-card">
+                        <div class="status-header">
+                            <span class="status-location">Lech - Zürs</span>
+                            <span class="status-badge open">Geöffnet</span>
+                        </div>
+                        <div class="rec-meta">
+                            <span>95% offen</span>
+                            <span>68/72 Pisten</span>
+                        </div>
+                    </div>
+                    <div class="status-card">
+                        <div class="status-header">
+                            <span class="status-location">St. Anton - St. Christoph</span>
+                            <span class="status-badge open">Geöffnet</span>
+                        </div>
+                        <div class="rec-meta">
+                            <span>88% offen</span>
+                            <span>52/59 Pisten</span>
+                        </div>
+                    </div>
+                    <div class="status-card">
+                        <div class="status-header">
+                            <span class="status-location">Stuben - Alpe Rauz</span>
+                            <span class="status-badge open">Geöffnet</span>
+                        </div>
+                        <div class="rec-meta">
+                            <span>100% offen</span>
+                            <span>28/28 Pisten</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lifte Übersicht -->
+        <section class="recommendations">
+            <div class="container">
+                <h2 class="section-title">Wichtige Lifte & Bahnen</h2>
+                <div class="recommendations-grid">
+                    <div class="recommendation-card">
+                        <div class="rec-content">
+                            <h3>Valluga Bahn I+II</h3>
+                            <p>Höchste Bergstation auf 2.811 m mit atemberaubendem Panorama über die Berge.</p>
+                            <div class="rec-meta">
+                                <span class="difficulty">⬆️ 2.811 m</span>
+                                <span class="length">🚡 Kabinenbahn</span>
+                            </div>
+                            <span class="status-badge open" style="margin-top: 1rem;">Geöffnet</span>
+                        </div>
+                    </div>
+                    <div class="recommendation-card">
+                        <div class="rec-content">
+                            <h3>Galzig Bahn</h3>
+                            <p>Zentrale Pendelbahn von St. Anton direkt ins Skigebiet. 6er Kabinen.</p>
